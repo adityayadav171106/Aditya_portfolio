@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fr. CRCE Placement Cell | Architecting Your Future</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #f1b335; /* College Accent Gold */
+            --dark-blue: #0a192f;   /* Primary College Blue */
+            --section-bg: #0d1e36;  /* Slightly lighter blue for secondary sections */
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --text-light: #ffffff;
+            --text-dim: #ccd6f6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+        body {
+            background-color: var(--dark-blue);
+            color: var(--text-light);
+            overflow-x: hidden;
+        }
+
+        /* Fixed Header */
+        .college-header {
+            position: fixed; /* Fix header to top */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 1rem 5%;
+            background: rgba(10, 25, 47, 0.9); /* Darker background for readability */
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .college-logo-container img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .college-title h1 { font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Main Container - Now Vertical Stack */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* SECTION 1: HERO (Full Screen Landing) */
+        .hero-section {
+            min-height: 100vh; /* Takes full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8rem 10% 4rem 10%; /* Extra top padding for fixed header */
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.95)),
+                        url('https://frcrce.ac.in/wp-content/uploads/2021/05/college-building.jpg') center/cover fixed;
+        }
+
+        .hero-text h2 { font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem; max-width: 800px; }
+        .hero-text p { font-size: 1.3rem; color: var(--text-dim); margin-bottom: 2.5rem; max-width: 600px; }
+
+        .cta-group { display: flex; gap: 1rem; margin-bottom: 3rem; }
+        .btn-gold { background: var(--primary-gold); color: #000; padding: 1rem 2.5rem; border-radius: 8px; font-weight: 700; border: none; cursor: pointer; font-size: 1rem; transition: transform 0.2s; }
+        .btn-outline { border: 2px solid white; color: white; background: transparent; padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1rem; transition: background 0.3s; }
+        .btn-gold:hover { transform: translateY(-3px); }
+        .btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+        .quick-stats { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 4rem; }
+        .stat-pill { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--primary-gold); color: var(--primary-gold); padding: 0.6rem 1.5rem; border-radius: 50px; font-size: 1rem; font-weight: 600; }
+
+        /* Tool Grid in Hero */
+        .tool-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 1.5rem; 
+            width: 100%;
+        }
+        .tool-card { background: var(--glass-bg); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; backdrop-filter: blur(5px); }
+        .tool-card:hover { border-color: var(--primary-gold); background: rgba(255, 255, 255, 0.15); transform: translateY(-5px); }
+        .tool-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+
+        /* SECTION 2: CONTENT (Scrollable area) */
+        .content-section {
+            padding: 5rem 10%;
+            background: var(--section-bg);
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Grid layout for the bottom content to keep it organized */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Main content left, Sidebar right */
+            gap: 3rem;
+        }
+
+        .section-box { background: rgba(255, 255, 255, 0.03); padding: 2rem; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.05); margin-bottom: 2rem; }
+        .section-box h3 { margin-bottom: 1.5rem; font-size: 1.2rem; text-transform: uppercase; color: var(--text-dim); letter-spacing: 1px; }
+
+        .recruiter-strip { background: white; border-radius: 10px; padding: 1.5rem; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 2rem; }
+        .recruiter-strip img { height: 35px; filter: grayscale(1); opacity: 0.7; transition: 0.3s; }
+        .recruiter-strip img:hover { filter: grayscale(0); opacity: 1; }
+
+        .pipeline-graphic { background: linear-gradient(90deg, #1e3a8a, #3b82f6); padding: 1.5rem; border-radius: 50px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; margin-bottom: 2rem; position: relative; overflow: hidden; }
+        /* Animated dot */
+        .pipeline-graphic::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); animation: shine 3s infinite; }
+
+        .success-stories { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .testimonial-card { background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 10px; flex: 1; min-width: 250px; display: flex; align-items: center; gap: 1rem; border: 1px solid rgba(255,255,255,0.05); }
+        .testimonial-card img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-gold); }
+        
+        /* Sidebar in Content Section */
+        .widget { background: var(--glass-bg); padding: 1.5rem; border-radius: 10px; font-size: 0.9rem; height: fit-content; }
+        .skill-tag { display: inline-block; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; margin: 4px; background: rgba(59, 130, 246, 0.3); border: 1px solid #3b82f6; color: #93c5fd; }
+
+        @keyframes shine { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+
+        @media (max-width: 1024px) { 
+            .hero-text h2 { font-size: 2.5rem; }
+            .content-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="college-header">
+        <div class="college-logo-container">
+            <img src="https://frcrce.ac.in/wp-content/uploads/2021/04/crce-logo.png" alt="CRCE Logo">
+        </div>
+        <div class="college-title">
+            <h1>Fr. Conceicao Rodrigues College of Engineering</h1>
+        </div>
+    </header>
+
+    <main class="main-container">
+        
+        <section class="hero-section">
+            <div class="hero-text">
+                <h2>Fr. CRCE Placement Cell:<br><span style="color: var(--primary-gold);">Architecting Your Future.</span></h2>
+                <p>Your Career Journey, Tracked & Transformed. Join the ecosystem of excellence.</p>
+            </div>
+
+            <div class="cta-group">
+                <button class="btn-gold">Student Login</button>
+                <button class="btn-outline">Recruiter Portal</button>
+            </div>
+
+            <div class="quick-stats">
+                <div class="stat-pill">100% Internships</div>
+                <div class="stat-pill">500+ Offers</div>
+                <div class="stat-pill">Highest Package: ₹XX LPA</div>
+            </div>
+
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <h4>🔍 Placement Tracking</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">Real-time status of your applications.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>⏱️ Internship Manager</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">Log hours and weekly reports.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>📄 AI Resume Builder</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">Create industry-standard resumes.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>💡 Company Insights</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">Access past interview experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="content-grid">
+                
+                <div class="main-column">
+                    <div class="section-box">
+                        <h3>Our Top Recruiters</h3>
+                        <div class="recruiter-strip">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg" alt="TCS">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Infosys_logo.svg" alt="Infosys">
+                        </div>
+                    </div>
+
+                    <div class="section-box" style="border: none; background: transparent; padding: 0;">
+                        <h3 style="margin-bottom:1rem;">Your Journey</h3>
+                        <div class="pipeline-graphic">
+                            <span>Profile Building</span> <span>→</span> <span>Skill Assessment</span> <span>→</span> <span>Mock Interviews</span> <span>→</span> <span>Offer Letter</span>
+                        </div>
+                    </div>
+
+                    <div class="section-box">
+                        <h3>Success Stories & Testimonials</h3>
+                        <div class="success-stories">
+                            <div class="testimonial-card">
+                                <img src="https://i.pravatar.cc/100?u=1" alt="Student">
+                                <div>
+                                    <h4>Ananya Sharma</h4>
+                                    <p style="color:var(--primary-gold); font-size: 0.8rem;">Placed at Google</p>
+                                    <p style="font-size: 0.8rem; margin-top:5px; color: #ccc;">"The placement cell helped me refine my resume."</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <img src="https://i.pravatar.cc/100?u=2" alt="Student">
+                                <div>
+                                    <h4>Rahul Verma</h4>
+                                    <p style="color:var(--primary-gold); font-size: 0.8rem;">Placed at Microsoft</p>
+                                    <p style="font-size: 0.8rem; margin-top:5px; color: #ccc;">"Mock interviews were a game changer."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-column">
+                    <div class="widget">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 10px;">📢 Notice Board</h4>
+                        <p style="margin-bottom: 5px;"><strong>Upcoming Deadlines:</strong></p>
+                        <ul style="list-style: none; margin-bottom: 15px; color: var(--text-dim);">
+                            <li>• JP Morgan (Today 5PM)</li>
+                            <li>• TCS CodeVita (Tommorow)</li>
+                        </ul>
+                        <hr style="margin: 10px 0; opacity: 0.1;">
+                        <p style="margin-bottom: 10px;"><strong>🔥 Trending Skills:</strong></p>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                        <span class="skill-tag">React JS</span>
+                        <span class="skill-tag">Data Science</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
