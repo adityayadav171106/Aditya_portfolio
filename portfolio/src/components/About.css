@@ -1,0 +1,138 @@
+.about {
+  position: relative;
+  padding: var(--section-padding) 0;
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+
+.about__container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section label */
+.about__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.about__label-line {
+  width: 60px;
+  height: 1px;
+  background: var(--accent-gold);
+  transform-origin: left;
+}
+
+.about__label {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about__label-number {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+/* Content */
+.about__content {
+  max-width: 800px;
+}
+
+.about__title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  color: var(--text-primary);
+}
+
+.about__title em {
+  font-style: italic;
+  color: var(--accent-gold);
+}
+
+.about__body {
+  margin-bottom: 60px;
+}
+
+.about__placeholder {
+  font-family: var(--font-accent);
+  font-size: 22px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-weight: 300;
+  max-width: 600px;
+}
+
+/* Stats */
+.about__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 600px;
+}
+
+.about__stat {
+  padding: 28px 24px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-card);
+  transition: all 0.4s var(--ease-out-expo);
+}
+
+.about__stat:hover {
+  background: var(--bg-tertiary);
+}
+
+.about__stat-value {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+
+.about__stat-label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Background text decoration */
+.about__bg-text {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: clamp(120px, 20vw, 350px);
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.02);
+  letter-spacing: 0.05em;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .about__stats {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .about__placeholder {
+    font-size: 18px;
+  }
+}

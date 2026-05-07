@@ -1,0 +1,11 @@
+/* App-level styles */
+.app {
+  position: relative;
+  cursor: none;
+}
+
+@media (max-width: 768px), (hover: none) {
+  .app {
+    cursor: auto;
+  }
+}

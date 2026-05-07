@@ -1,0 +1,28 @@
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px var(--container-padding);
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.section-divider__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--border-light) 50%,
+    transparent 100%
+  );
+  transform-origin: center;
+}
+
+.section-divider__diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-gold);
+  flex-shrink: 0;
+}
