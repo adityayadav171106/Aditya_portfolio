@@ -52,11 +52,11 @@ const Contact = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <a href="mailto:hello@example.com" className="contact__email-btn">
+          <a href="mailto:adityayadav171106@gmail.com" className="contact__email-btn">
             <span className="contact__email-btn-text">Say Hello</span>
             <span className="contact__email-btn-arrow">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M5 15L15 5M15 5H7M15 5V13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
           </a>
@@ -81,9 +81,19 @@ const Contact = () => {
             © {new Date().getFullYear()} Aditya
           </span>
           <div className="contact__socials">
-            {['GitHub', 'LinkedIn', 'Twitter'].map((social) => (
-              <a key={social} href="#" className="contact__social-link">
-                {social}
+            {[
+              { name: 'GitHub', url: 'https://github.com/adityayadav171106' },
+              { name: 'LinkedIn', url: 'https://www.linkedin.com/in/aditya-yadav-a183b8330' },
+              { name: 'Instagram', url: 'https://www.instagram.com/adi_likes_cats/' },
+            ].map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                className="contact__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {social.name}
               </a>
             ))}
           </div>

@@ -1,16 +1,59 @@
-# React + Vite
+# Animated React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, high-impact personal portfolio website built with React, Vite, and modern animation libraries.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Animations:** [GSAP](https://greensock.com/gsap/) & [Framer Motion](https://www.framer.com/motion/)
+- **Styling:** Vanilla CSS (Modern CSS features)
 
-## React Compiler
+## 🛠️ Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Make sure you have **Node.js** (v18.0.0 or higher) and **npm** installed on your system.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   The site will be available at `http://localhost:5173`.
+
+## 📜 Available Scripts
+
+In the project directory, you can run:
+
+| Script | Description |
+| :--- | :--- |
+| `npm run dev` | Runs the app in the development mode with HMR. |
+| `npm run build` | Builds the app for production to the `dist` folder. |
+| `npm run preview` | Locally previews the production build. |
+| `npm run lint` | Runs ESLint to find and fix problems in the codebase. |
+
+## 📁 Project Structure
+
+- `src/components/`: Reusable UI components (Hero, Projects, Contact, etc.)
+- `src/assets/`: Static assets like images and fonts.
+- `src/App.jsx`: Main application component and routing.
+- `src/index.css`: Global styles and CSS variables.
+
+---
+
+Built with ❤️ using React & Vite.
