@@ -68,7 +68,7 @@
 }
 
 .hero__name {
-  font-family: var(--font-display);
+  font-family: var(--font-captain);
   font-size: clamp(80px, 18vw, 280px);
   font-weight: 900;
   letter-spacing: 0.04em;

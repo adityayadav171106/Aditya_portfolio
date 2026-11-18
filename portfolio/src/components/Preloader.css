@@ -41,7 +41,7 @@
 }
 
 .preloader__name {
-  font-family: var(--font-display);
+  font-family: var(--font-captain);
   font-size: 48px;
   font-weight: 700;
   color: var(--text-primary);
