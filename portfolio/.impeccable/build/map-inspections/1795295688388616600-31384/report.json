@@ -1,0 +1,1216 @@
+{
+  "tool": "comp-spec inspect-map",
+  "version": 1,
+  "referenceOnly": true,
+  "stateChanged": false,
+  "comp": ".impeccable\\mocks\\comp-01-plate.png",
+  "compSize": {
+    "width": 1440,
+    "height": 900
+  },
+  "inputRegionCount": 15,
+  "regions": [
+    {
+      "id": "hero-collage",
+      "kind": "image",
+      "note": "The supplied blue collage with stars, moon, monochrome cat, and layered print lettering; one full-width hero image plate.",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.9056
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 815
+      },
+      "aspect": 1.7669,
+      "palette": [
+        {
+          "hex": "#0a1122",
+          "coverage": 0.8636
+        },
+        {
+          "hex": "#e8f7f8",
+          "coverage": 0.0482
+        },
+        {
+          "hex": "#22344a",
+          "coverage": 0.048
+        },
+        {
+          "hex": "#7d8892",
+          "coverage": 0.0244
+        },
+        {
+          "hex": "#575e66",
+          "coverage": 0.0158
+        }
+      ],
+      "detail": {
+        "energy": 29.6817
+      },
+      "medium": "raster",
+      "plate": "assets/plates/hero-collage.png",
+      "text": null,
+      "number": 1,
+      "reference": {
+        "policy": "plate-reference-v2",
+        "excludedPixels": 179374,
+        "totalPixels": 1173600,
+        "remainingPixels": 994226,
+        "excludedFraction": 0.1528408316291752,
+        "fullyExcluded": false,
+        "regions": [
+          {
+            "id": "masthead-mark",
+            "kind": "text",
+            "cropPx": {
+              "x": 77,
+              "y": 20,
+              "w": 34,
+              "h": 30
+            },
+            "pixels": 1020
+          },
+          {
+            "id": "nav-about",
+            "kind": "control",
+            "cropPx": {
+              "x": 502,
+              "y": 32,
+              "w": 51,
+              "h": 17
+            },
+            "pixels": 867
+          },
+          {
+            "id": "nav-work",
+            "kind": "control",
+            "cropPx": {
+              "x": 582,
+              "y": 32,
+              "w": 43,
+              "h": 17
+            },
+            "pixels": 731
+          },
+          {
+            "id": "nav-side-quests",
+            "kind": "control",
+            "cropPx": {
+              "x": 654,
+              "y": 32,
+              "w": 93,
+              "h": 17
+            },
+            "pixels": 1581
+          },
+          {
+            "id": "nav-contact",
+            "kind": "control",
+            "cropPx": {
+              "x": 770,
+              "y": 32,
+              "w": 70,
+              "h": 17
+            },
+            "pixels": 1190
+          },
+          {
+            "id": "folio-metadata",
+            "kind": "text",
+            "cropPx": {
+              "x": 1223,
+              "y": 32,
+              "w": 145,
+              "h": 17
+            },
+            "pixels": 2465
+          },
+          {
+            "id": "student-label",
+            "kind": "text",
+            "cropPx": {
+              "x": 120,
+              "y": 290,
+              "w": 155,
+              "h": 20
+            },
+            "pixels": 3100
+          },
+          {
+            "id": "hero-title",
+            "kind": "text",
+            "cropPx": {
+              "x": 120,
+              "y": 316,
+              "w": 560,
+              "h": 250
+            },
+            "pixels": 140000
+          },
+          {
+            "id": "hero-intro",
+            "kind": "text",
+            "cropPx": {
+              "x": 120,
+              "y": 606,
+              "w": 360,
+              "h": 50
+            },
+            "pixels": 18000
+          },
+          {
+            "id": "hero-action",
+            "kind": "control",
+            "cropPx": {
+              "x": 120,
+              "y": 680,
+              "w": 130,
+              "h": 34
+            },
+            "pixels": 4420
+          },
+          {
+            "id": "plate-caption",
+            "kind": "text",
+            "cropPx": {
+              "x": 1070,
+              "y": 764,
+              "w": 300,
+              "h": 20
+            },
+            "pixels": 6000
+          }
+        ],
+        "ignoredContainers": [
+          "hero-shade"
+        ]
+      },
+      "cropPath": "region-1.png",
+      "referencePath": "reference-1.png"
+    },
+    {
+      "id": "hero-shade",
+      "kind": "chrome",
+      "note": "A dark navy readability wash over the hero image, heavier at the lower-left and bottom.",
+      "grid": null,
+      "codeDrawn": true,
+      "container": true,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.9056
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 815
+      },
+      "aspect": 1.7669,
+      "palette": [
+        {
+          "hex": "#0a1122",
+          "coverage": 0.8636
+        },
+        {
+          "hex": "#e8f7f8",
+          "coverage": 0.0482
+        },
+        {
+          "hex": "#22344a",
+          "coverage": 0.048
+        },
+        {
+          "hex": "#7d8892",
+          "coverage": 0.0244
+        },
+        {
+          "hex": "#575e66",
+          "coverage": 0.0158
+        }
+      ],
+      "detail": {
+        "energy": 29.6817
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 2,
+      "cropPath": "region-2.png"
+    },
+    {
+      "id": "masthead-mark",
+      "kind": "text",
+      "note": "The A. home mark at the far left of the top navigation.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0535,
+        "y": 0.0222,
+        "w": 0.0236,
+        "h": 0.0333
+      },
+      "px": {
+        "x": 77,
+        "y": 20,
+        "w": 34,
+        "h": 30
+      },
+      "aspect": 1.1333,
+      "palette": [
+        {
+          "hex": "#090919",
+          "coverage": 0.4912
+        },
+        {
+          "hex": "#e7f8f8",
+          "coverage": 0.3596
+        },
+        {
+          "hex": "#e8f8d8",
+          "coverage": 0.0702
+        },
+        {
+          "hex": "#252838",
+          "coverage": 0.0439
+        },
+        {
+          "hex": "#0808a8",
+          "coverage": 0.0351
+        }
+      ],
+      "detail": {
+        "energy": 11.6372
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 3,
+      "cropPath": "region-3.png"
+    },
+    {
+      "id": "nav-about",
+      "kind": "control",
+      "note": "The About navigation link in the top row.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.3486,
+        "y": 0.0356,
+        "w": 0.0354,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 502,
+        "y": 32,
+        "w": 51,
+        "h": 17
+      },
+      "aspect": 3,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.7582
+        },
+        {
+          "hex": "#e6e8f3",
+          "coverage": 0.0769
+        },
+        {
+          "hex": "#afdff8",
+          "coverage": 0.0769
+        },
+        {
+          "hex": "#880818",
+          "coverage": 0.044
+        },
+        {
+          "hex": "#34445c",
+          "coverage": 0.044
+        }
+      ],
+      "detail": {
+        "energy": 21.6948
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 4,
+      "cropPath": "region-4.png"
+    },
+    {
+      "id": "nav-work",
+      "kind": "control",
+      "note": "The Work navigation link in the top row.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.4042,
+        "y": 0.0356,
+        "w": 0.0299,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 582,
+        "y": 32,
+        "w": 43,
+        "h": 17
+      },
+      "aspect": 2.5294,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.7439
+        },
+        {
+          "hex": "#dae8f5",
+          "coverage": 0.122
+        },
+        {
+          "hex": "#8ecbf8",
+          "coverage": 0.061
+        },
+        {
+          "hex": "#880818",
+          "coverage": 0.0366
+        },
+        {
+          "hex": "#e8d3bd",
+          "coverage": 0.0366
+        }
+      ],
+      "detail": {
+        "energy": 19.9844
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 5,
+      "cropPath": "region-5.png"
+    },
+    {
+      "id": "nav-side-quests",
+      "kind": "control",
+      "note": "The Side quests navigation link in the top row.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.4542,
+        "y": 0.0356,
+        "w": 0.0646,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 654,
+        "y": 32,
+        "w": 93,
+        "h": 17
+      },
+      "aspect": 5.4706,
+      "palette": [
+        {
+          "hex": "#080819",
+          "coverage": 0.7988
+        },
+        {
+          "hex": "#e4e8f7",
+          "coverage": 0.0976
+        },
+        {
+          "hex": "#d5bb8d",
+          "coverage": 0.0366
+        },
+        {
+          "hex": "#b0e0f8",
+          "coverage": 0.0366
+        },
+        {
+          "hex": "#880818",
+          "coverage": 0.0305
+        }
+      ],
+      "detail": {
+        "energy": 36.7644
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 6,
+      "cropPath": "region-6.png"
+    },
+    {
+      "id": "nav-contact",
+      "kind": "control",
+      "note": "The Contact navigation link in the top row.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.5347,
+        "y": 0.0356,
+        "w": 0.0486,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 770,
+        "y": 32,
+        "w": 70,
+        "h": 17
+      },
+      "aspect": 4.1176,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.7744
+        },
+        {
+          "hex": "#e2e8f5",
+          "coverage": 0.1203
+        },
+        {
+          "hex": "#e8d5c0",
+          "coverage": 0.0451
+        },
+        {
+          "hex": "#a8d8f8",
+          "coverage": 0.0376
+        },
+        {
+          "hex": "#080888",
+          "coverage": 0.0226
+        }
+      ],
+      "detail": {
+        "energy": 26.5914
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 7,
+      "cropPath": "region-7.png"
+    },
+    {
+      "id": "folio-metadata",
+      "kind": "text",
+      "note": "The small Personal Folio / 2026 label at the far right of the masthead.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.8493,
+        "y": 0.0356,
+        "w": 0.1007,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 1223,
+        "y": 32,
+        "w": 145,
+        "h": 17
+      },
+      "aspect": 8.5294,
+      "palette": [
+        {
+          "hex": "#0d1625",
+          "coverage": 0.8233
+        },
+        {
+          "hex": "#b1c7e5",
+          "coverage": 0.0964
+        },
+        {
+          "hex": "#aabab8",
+          "coverage": 0.0321
+        },
+        {
+          "hex": "#5aaae8",
+          "coverage": 0.0281
+        },
+        {
+          "hex": "#0e75c5",
+          "coverage": 0.0201
+        }
+      ],
+      "detail": {
+        "energy": 41.3064
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 8,
+      "cropPath": "region-8.png"
+    },
+    {
+      "id": "student-label",
+      "kind": "text",
+      "note": "The compact Aditya · Engineering student label above the main title.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0833,
+        "y": 0.3222,
+        "w": 0.1076,
+        "h": 0.0222
+      },
+      "px": {
+        "x": 120,
+        "y": 290,
+        "w": 155,
+        "h": 20
+      },
+      "aspect": 7.75,
+      "palette": [
+        {
+          "hex": "#080f1d",
+          "coverage": 0.9012
+        },
+        {
+          "hex": "#bad6e7",
+          "coverage": 0.0581
+        },
+        {
+          "hex": "#8bc8e8",
+          "coverage": 0.0174
+        },
+        {
+          "hex": "#a47818",
+          "coverage": 0.0116
+        },
+        {
+          "hex": "#2888d8",
+          "coverage": 0.0116
+        }
+      ],
+      "detail": {
+        "energy": 40.8043
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 9,
+      "cropPath": "region-9.png"
+    },
+    {
+      "id": "hero-title",
+      "kind": "text",
+      "note": "The three-line main title just your average nerd ;) in a large custom display face.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0833,
+        "y": 0.3511,
+        "w": 0.3889,
+        "h": 0.2778
+      },
+      "px": {
+        "x": 120,
+        "y": 316,
+        "w": 560,
+        "h": 250
+      },
+      "aspect": 2.24,
+      "palette": [
+        {
+          "hex": "#081021",
+          "coverage": 0.5118
+        },
+        {
+          "hex": "#e8f6f8",
+          "coverage": 0.408
+        },
+        {
+          "hex": "#333d4b",
+          "coverage": 0.0369
+        },
+        {
+          "hex": "#5e6669",
+          "coverage": 0.0268
+        },
+        {
+          "hex": "#0d2944",
+          "coverage": 0.0165
+        }
+      ],
+      "detail": {
+        "energy": 56.5419
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 10,
+      "cropPath": "region-10.png"
+    },
+    {
+      "id": "hero-intro",
+      "kind": "text",
+      "note": "The two-line introduction naming coding, chess, cats, robots, and open-ended curiosity.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0833,
+        "y": 0.6733,
+        "w": 0.25,
+        "h": 0.0556
+      },
+      "px": {
+        "x": 120,
+        "y": 606,
+        "w": 360,
+        "h": 50
+      },
+      "aspect": 7.2,
+      "palette": [
+        {
+          "hex": "#0a0d1e",
+          "coverage": 0.8013
+        },
+        {
+          "hex": "#253142",
+          "coverage": 0.1271
+        },
+        {
+          "hex": "#e4e8f4",
+          "coverage": 0.0272
+        },
+        {
+          "hex": "#8dc9f5",
+          "coverage": 0.0256
+        },
+        {
+          "hex": "#e8ddcd",
+          "coverage": 0.0187
+        }
+      ],
+      "detail": {
+        "energy": 54.6275
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 11,
+      "cropPath": "region-11.png"
+    },
+    {
+      "id": "hero-action",
+      "kind": "control",
+      "note": "The underlined Explore the folio link leading to About.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0833,
+        "y": 0.7556,
+        "w": 0.0903,
+        "h": 0.0378
+      },
+      "px": {
+        "x": 120,
+        "y": 680,
+        "w": 130,
+        "h": 34
+      },
+      "aspect": 3.8235,
+      "palette": [
+        {
+          "hex": "#101525",
+          "coverage": 0.9309
+        },
+        {
+          "hex": "#e5f8f8",
+          "coverage": 0.0244
+        },
+        {
+          "hex": "#7ab6f4",
+          "coverage": 0.0163
+        },
+        {
+          "hex": "#b3832f",
+          "coverage": 0.0142
+        },
+        {
+          "hex": "#a8e3f8",
+          "coverage": 0.0142
+        }
+      ],
+      "detail": {
+        "energy": 29.202
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 12,
+      "cropPath": "region-12.png"
+    },
+    {
+      "id": "plate-caption",
+      "kind": "text",
+      "note": "The small FIELD PLATE caption aligned at the lower-right edge of the image.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.7431,
+        "y": 0.8489,
+        "w": 0.2083,
+        "h": 0.0222
+      },
+      "px": {
+        "x": 1070,
+        "y": 764,
+        "w": 300,
+        "h": 20
+      },
+      "aspect": 15,
+      "palette": [
+        {
+          "hex": "#080a19",
+          "coverage": 0.9008
+        },
+        {
+          "hex": "#3ea5e4",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#d1dfee",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#99d2f7",
+          "coverage": 0.0224
+        },
+        {
+          "hex": "#d7d3b5",
+          "coverage": 0.0192
+        }
+      ],
+      "detail": {
+        "energy": 63.5784
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 13,
+      "cropPath": "region-13.png"
+    },
+    {
+      "id": "about-kicker",
+      "kind": "text",
+      "note": "The FIELD ENTRY / ABOUT label opening the next section.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0764,
+        "y": 0.9222,
+        "w": 0.1319,
+        "h": 0.03
+      },
+      "px": {
+        "x": 110,
+        "y": 830,
+        "w": 190,
+        "h": 27
+      },
+      "aspect": 7.037,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.9583
+        },
+        {
+          "hex": "#6e9fd8",
+          "coverage": 0.0199
+        },
+        {
+          "hex": "#080888",
+          "coverage": 0.0072
+        },
+        {
+          "hex": "#3480d0",
+          "coverage": 0.0072
+        },
+        {
+          "hex": "#78a8c0",
+          "coverage": 0.0072
+        }
+      ],
+      "detail": {
+        "energy": 13.1976
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 14,
+      "cropPath": "region-14.png"
+    },
+    {
+      "id": "about-title",
+      "kind": "text",
+      "note": "The visible beginning of the next heading, A few things about me.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0764,
+        "y": 0.9444,
+        "w": 0.4861,
+        "h": 0.0556
+      },
+      "px": {
+        "x": 110,
+        "y": 850,
+        "w": 700,
+        "h": 50
+      },
+      "aspect": 14,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.5697
+        },
+        {
+          "hex": "#e7f6f8",
+          "coverage": 0.2263
+        },
+        {
+          "hex": "#97b8f7",
+          "coverage": 0.1641
+        },
+        {
+          "hex": "#3d465e",
+          "coverage": 0.0266
+        },
+        {
+          "hex": "#789aca",
+          "coverage": 0.0134
+        }
+      ],
+      "detail": {
+        "energy": 98.3869
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 15,
+      "cropPath": "region-15.png"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "foreground-mask",
+      "regionId": "hero-collage",
+      "message": "masthead-mark, nav-about, nav-work, nav-side-quests, nav-contact, folio-metadata, student-label, hero-title, hero-intro, hero-action, plate-caption exclude 15.3% of this reference. Check that the excluded pixels contain foreground, not artwork between separate text elements. Split overly broad foreground bounds; review grouping must not change geometry."
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region hero-collage: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region hero-shade: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region hero-shade: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region masthead-mark: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region nav-about: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region nav-work: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region nav-side-quests: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region nav-contact: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region folio-metadata: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region student-label: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region hero-title: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region hero-intro: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region hero-action: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region plate-caption: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region about-kicker: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    },
+    {
+      "severity": "warning",
+      "code": "measurement-warning",
+      "regionId": null,
+      "message": "region about-title: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+    }
+  ],
+  "overlaps": [
+    {
+      "a": "hero-collage",
+      "b": "hero-shade",
+      "pixels": 1173600.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-collage",
+      "b": "masthead-mark",
+      "pixels": 1020.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "nav-about",
+      "pixels": 867.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "nav-work",
+      "pixels": 731.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "nav-side-quests",
+      "pixels": 1581.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "nav-contact",
+      "pixels": 1190.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "folio-metadata",
+      "pixels": 2465.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "student-label",
+      "pixels": 3100.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "hero-title",
+      "pixels": 140000.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "hero-intro",
+      "pixels": 18000.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "hero-action",
+      "pixels": 4420.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-collage",
+      "b": "plate-caption",
+      "pixels": 6000.0,
+      "relationship": "overlapping elements"
+    },
+    {
+      "a": "hero-shade",
+      "b": "masthead-mark",
+      "pixels": 1020.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "nav-about",
+      "pixels": 867.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "nav-work",
+      "pixels": 731.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "nav-side-quests",
+      "pixels": 1581.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "nav-contact",
+      "pixels": 1190.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "folio-metadata",
+      "pixels": 2465.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "student-label",
+      "pixels": 3100.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "hero-title",
+      "pixels": 140000.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "hero-intro",
+      "pixels": 18000.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "hero-action",
+      "pixels": 4420.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "hero-shade",
+      "b": "plate-caption",
+      "pixels": 6000.0,
+      "relationship": "container extent"
+    },
+    {
+      "a": "about-kicker",
+      "b": "about-title",
+      "pixels": 1330.0,
+      "relationship": "overlapping elements"
+    }
+  ],
+  "reviewGroups": {},
+  "uncoveredInkCells": [],
+  "comparisonSheets": [
+    {
+      "path": "comparison-1.png",
+      "regionIds": [
+        "hero-collage"
+      ]
+    }
+  ]
+}

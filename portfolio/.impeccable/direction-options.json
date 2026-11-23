@@ -1,0 +1,34 @@
+{
+  "title": "Choose the visual world",
+  "question": "The assigned direction is a Blue-Hour Field Folio. Keep it, re-roll for another grounded direction, or take the plain portfolio route.",
+  "options": [
+    {
+      "id": "blue-hour-field-folio",
+      "kind": "assigned",
+      "label": "Blue-Hour Field Folio",
+      "kicker": "THE ROLL",
+      "lineage": "astronomical field journals",
+      "thesis": "A portfolio as an annotated record of a mind with many lines of inquiry.",
+      "palette": ["#080e1d", "#11284c", "#76aaff", "#e9f1ff"],
+      "materials": ["midnight-blue printed stock", "silver field annotations", "halftone image plates"],
+      "viewport": "The supplied collage leads as one large image plate; the introduction and working navigation sit in its margins, and the next section begins as a quiet field entry.",
+      "risk": "The observatory language could make the site feel like an art project; plain labels and a clear contact route keep the portfolio legible.",
+      "raised": [],
+      "hero": "C:\\Users\\aman\\college\\portfolio\\public\\hero-collage.jpg"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "comp", "toggle": true },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "The category standard",
+    "thesis": "A conventional portfolio structure with restrained surfaces and expected navigation.",
+    "palette": ["#ffffff", "#111827", "#2563eb"],
+    "materials": ["clean grid", "quiet typography"],
+    "viewport": "A straightforward introduction followed by work, about, interests, and contact sections.",
+    "risk": "It has less of the image's distinctive personality.",
+    "hero": "C:\\Users\\aman\\college\\portfolio\\public\\hero-collage.jpg"
+  },
+  "steer": true
+}

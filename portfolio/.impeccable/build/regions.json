@@ -1,0 +1,110 @@
+{
+  "regions": [
+    {
+      "id": "hero-collage",
+      "kind": "image",
+      "pixelBox": { "x": 0, "y": 0, "w": 1440, "h": 815 },
+      "bleed": true,
+      "note": "The supplied blue collage with stars, moon, monochrome cat, and layered print lettering; one full-width hero image plate."
+    },
+    {
+      "id": "hero-shade",
+      "kind": "chrome",
+      "pixelBox": { "x": 0, "y": 0, "w": 1440, "h": 815 },
+      "container": true,
+      "codeDrawn": true,
+      "note": "A dark navy readability wash over the hero image, heavier at the lower-left and bottom."
+    },
+    {
+      "id": "masthead-mark",
+      "kind": "text",
+      "codeDrawn": true,
+      "pixelBox": { "x": 77, "y": 20, "w": 34, "h": 30 },
+      "note": "The A. home mark at the far left of the top navigation."
+    },
+    {
+      "id": "nav-about",
+      "kind": "control",
+      "codeDrawn": true,
+      "pixelBox": { "x": 502, "y": 32, "w": 51, "h": 17 },
+      "note": "The About navigation link in the top row."
+    },
+    {
+      "id": "nav-work",
+      "kind": "control",
+      "codeDrawn": true,
+      "pixelBox": { "x": 582, "y": 32, "w": 43, "h": 17 },
+      "note": "The Work navigation link in the top row."
+    },
+    {
+      "id": "nav-side-quests",
+      "kind": "control",
+      "codeDrawn": true,
+      "pixelBox": { "x": 654, "y": 32, "w": 93, "h": 17 },
+      "note": "The Side quests navigation link in the top row."
+    },
+    {
+      "id": "nav-contact",
+      "kind": "control",
+      "codeDrawn": true,
+      "pixelBox": { "x": 770, "y": 32, "w": 70, "h": 17 },
+      "note": "The Contact navigation link in the top row."
+    },
+    {
+      "id": "folio-metadata",
+      "kind": "text",
+      "codeDrawn": true,
+      "pixelBox": { "x": 1223, "y": 32, "w": 145, "h": 17 },
+      "note": "The small Personal Folio / 2026 label at the far right of the masthead."
+    },
+    {
+      "id": "student-label",
+      "kind": "text",
+      "codeDrawn": true,
+      "pixelBox": { "x": 120, "y": 290, "w": 155, "h": 20 },
+      "note": "The compact Aditya · Engineering student label above the main title."
+    },
+    {
+      "id": "hero-title",
+      "kind": "text",
+      "codeDrawn": true,
+      "pixelBox": { "x": 120, "y": 316, "w": 560, "h": 250 },
+      "note": "The three-line main title just your average nerd ;) in a large custom display face."
+    },
+    {
+      "id": "hero-intro",
+      "kind": "text",
+      "codeDrawn": true,
+      "pixelBox": { "x": 120, "y": 606, "w": 360, "h": 50 },
+      "note": "The two-line introduction naming coding, chess, cats, robots, and open-ended curiosity."
+    },
+    {
+      "id": "hero-action",
+      "kind": "control",
+      "codeDrawn": true,
+      "pixelBox": { "x": 120, "y": 680, "w": 130, "h": 34 },
+      "note": "The underlined Explore the folio link leading to About."
+    },
+    {
+      "id": "plate-caption",
+      "kind": "text",
+      "codeDrawn": true,
+      "pixelBox": { "x": 1070, "y": 764, "w": 300, "h": 20 },
+      "note": "The small FIELD PLATE caption aligned at the lower-right edge of the image."
+    },
+    {
+      "id": "about-kicker",
+      "kind": "text",
+      "codeDrawn": true,
+      "pixelBox": { "x": 110, "y": 830, "w": 190, "h": 27 },
+      "note": "The FIELD ENTRY / ABOUT label opening the next section."
+    },
+    {
+      "id": "about-title",
+      "kind": "text",
+      "codeDrawn": true,
+      "pixelBox": { "x": 110, "y": 850, "w": 700, "h": 50 },
+      "note": "The visible beginning of the next heading, A few things about me."
+    }
+  ]
+}

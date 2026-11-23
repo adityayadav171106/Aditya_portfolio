@@ -1,0 +1,1034 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-11-21T21:14:54.706Z",
+  "comp": ".impeccable\\mocks\\comp-01-plate.png",
+  "warnings": [
+    "region hero-collage: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region hero-shade: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region hero-shade: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)",
+    "region masthead-mark: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region nav-about: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region nav-work: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region nav-side-quests: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region nav-contact: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region folio-metadata: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region student-label: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region hero-title: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region hero-intro: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region hero-action: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region plate-caption: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region about-kicker: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region about-title: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+  ],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 1440,
+    "height": 900
+  },
+  "aspect": 1.6,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#0a1021",
+      "coverage": 0.8711
+    },
+    {
+      "hex": "#e8f7f8",
+      "coverage": 0.05
+    },
+    {
+      "hex": "#22344a",
+      "coverage": 0.0438
+    },
+    {
+      "hex": "#7b8690",
+      "coverage": 0.0205
+    },
+    {
+      "hex": "#575e66",
+      "coverage": 0.0146
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.35,
+      "strength": 0.5057
+    },
+    {
+      "y": 0.375,
+      "strength": 0.2463
+    },
+    {
+      "y": 0.45,
+      "strength": 0.7948
+    },
+    {
+      "y": 0.525,
+      "strength": 0.554
+    },
+    {
+      "y": 0.55,
+      "strength": 0.3459
+    },
+    {
+      "y": 0.625,
+      "strength": 0.3165
+    },
+    {
+      "y": 0.95,
+      "strength": 0.4055
+    }
+  ],
+  "regions": [
+    {
+      "id": "hero-collage",
+      "kind": "image",
+      "note": "The supplied blue collage with stars, moon, monochrome cat, and layered print lettering; one full-width hero image plate.",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.9056
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 815
+      },
+      "aspect": 1.7669,
+      "palette": [
+        {
+          "hex": "#0a1122",
+          "coverage": 0.8636
+        },
+        {
+          "hex": "#e8f7f8",
+          "coverage": 0.0482
+        },
+        {
+          "hex": "#22344a",
+          "coverage": 0.048
+        },
+        {
+          "hex": "#7d8892",
+          "coverage": 0.0244
+        },
+        {
+          "hex": "#575e66",
+          "coverage": 0.0158
+        }
+      ],
+      "detail": {
+        "energy": 29.6817
+      },
+      "medium": "raster",
+      "plate": "assets/plates/hero-collage.png",
+      "text": null
+    },
+    {
+      "id": "hero-shade",
+      "kind": "chrome",
+      "note": "A dark navy readability wash over the hero image, heavier at the lower-left and bottom.",
+      "grid": null,
+      "codeDrawn": true,
+      "container": true,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.9056
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 815
+      },
+      "aspect": 1.7669,
+      "palette": [
+        {
+          "hex": "#0a1122",
+          "coverage": 0.8636
+        },
+        {
+          "hex": "#e8f7f8",
+          "coverage": 0.0482
+        },
+        {
+          "hex": "#22344a",
+          "coverage": 0.048
+        },
+        {
+          "hex": "#7d8892",
+          "coverage": 0.0244
+        },
+        {
+          "hex": "#575e66",
+          "coverage": 0.0158
+        }
+      ],
+      "detail": {
+        "energy": 29.6817
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "masthead-mark",
+      "kind": "text",
+      "note": "The A. home mark at the far left of the top navigation.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0535,
+        "y": 0.0222,
+        "w": 0.0236,
+        "h": 0.0333
+      },
+      "px": {
+        "x": 77,
+        "y": 20,
+        "w": 34,
+        "h": 30
+      },
+      "aspect": 1.1333,
+      "palette": [
+        {
+          "hex": "#090919",
+          "coverage": 0.4912
+        },
+        {
+          "hex": "#e7f8f8",
+          "coverage": 0.3596
+        },
+        {
+          "hex": "#e8f8d8",
+          "coverage": 0.0702
+        },
+        {
+          "hex": "#252838",
+          "coverage": 0.0439
+        },
+        {
+          "hex": "#0808a8",
+          "coverage": 0.0351
+        }
+      ],
+      "detail": {
+        "energy": 11.6372
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-11-21T21:15:12.808Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "nav-about",
+      "kind": "control",
+      "note": "The About navigation link in the top row.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.3486,
+        "y": 0.0356,
+        "w": 0.0354,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 502,
+        "y": 32,
+        "w": 51,
+        "h": 17
+      },
+      "aspect": 3,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.7582
+        },
+        {
+          "hex": "#e6e8f3",
+          "coverage": 0.0769
+        },
+        {
+          "hex": "#afdff8",
+          "coverage": 0.0769
+        },
+        {
+          "hex": "#880818",
+          "coverage": 0.044
+        },
+        {
+          "hex": "#34445c",
+          "coverage": 0.044
+        }
+      ],
+      "detail": {
+        "energy": 21.6948
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "nav-work",
+      "kind": "control",
+      "note": "The Work navigation link in the top row.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.4042,
+        "y": 0.0356,
+        "w": 0.0299,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 582,
+        "y": 32,
+        "w": 43,
+        "h": 17
+      },
+      "aspect": 2.5294,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.7439
+        },
+        {
+          "hex": "#dae8f5",
+          "coverage": 0.122
+        },
+        {
+          "hex": "#8ecbf8",
+          "coverage": 0.061
+        },
+        {
+          "hex": "#880818",
+          "coverage": 0.0366
+        },
+        {
+          "hex": "#e8d3bd",
+          "coverage": 0.0366
+        }
+      ],
+      "detail": {
+        "energy": 19.9844
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "nav-side-quests",
+      "kind": "control",
+      "note": "The Side quests navigation link in the top row.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.4542,
+        "y": 0.0356,
+        "w": 0.0646,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 654,
+        "y": 32,
+        "w": 93,
+        "h": 17
+      },
+      "aspect": 5.4706,
+      "palette": [
+        {
+          "hex": "#080819",
+          "coverage": 0.7988
+        },
+        {
+          "hex": "#e4e8f7",
+          "coverage": 0.0976
+        },
+        {
+          "hex": "#d5bb8d",
+          "coverage": 0.0366
+        },
+        {
+          "hex": "#b0e0f8",
+          "coverage": 0.0366
+        },
+        {
+          "hex": "#880818",
+          "coverage": 0.0305
+        }
+      ],
+      "detail": {
+        "energy": 36.7644
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "nav-contact",
+      "kind": "control",
+      "note": "The Contact navigation link in the top row.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.5347,
+        "y": 0.0356,
+        "w": 0.0486,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 770,
+        "y": 32,
+        "w": 70,
+        "h": 17
+      },
+      "aspect": 4.1176,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.7744
+        },
+        {
+          "hex": "#e2e8f5",
+          "coverage": 0.1203
+        },
+        {
+          "hex": "#e8d5c0",
+          "coverage": 0.0451
+        },
+        {
+          "hex": "#a8d8f8",
+          "coverage": 0.0376
+        },
+        {
+          "hex": "#080888",
+          "coverage": 0.0226
+        }
+      ],
+      "detail": {
+        "energy": 26.5914
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "folio-metadata",
+      "kind": "text",
+      "note": "The small Personal Folio / 2026 label at the far right of the masthead.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.8493,
+        "y": 0.0356,
+        "w": 0.1007,
+        "h": 0.0189
+      },
+      "px": {
+        "x": 1223,
+        "y": 32,
+        "w": 145,
+        "h": 17
+      },
+      "aspect": 8.5294,
+      "palette": [
+        {
+          "hex": "#0d1625",
+          "coverage": 0.8233
+        },
+        {
+          "hex": "#b1c7e5",
+          "coverage": 0.0964
+        },
+        {
+          "hex": "#aabab8",
+          "coverage": 0.0321
+        },
+        {
+          "hex": "#5aaae8",
+          "coverage": 0.0281
+        },
+        {
+          "hex": "#0e75c5",
+          "coverage": 0.0201
+        }
+      ],
+      "detail": {
+        "energy": 41.3064
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 18,
+          "capHeightPx": 7.5,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.6359,
+          "advTall": 0.6359,
+          "advX": null,
+          "gap": 0.2008,
+          "xRatio": null,
+          "stemW": 0.2467,
+          "contrast": 1.2927,
+          "serif": null,
+          "densTall": 0.6021,
+          "densX": null,
+          "weight": 0.6021
+        },
+        "widthClass": "normal",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "student-label",
+      "kind": "text",
+      "note": "The compact Aditya · Engineering student label above the main title.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0833,
+        "y": 0.3222,
+        "w": 0.1076,
+        "h": 0.0222
+      },
+      "px": {
+        "x": 120,
+        "y": 290,
+        "w": 155,
+        "h": 20
+      },
+      "aspect": 7.75,
+      "palette": [
+        {
+          "hex": "#080f1d",
+          "coverage": 0.9012
+        },
+        {
+          "hex": "#bad6e7",
+          "coverage": 0.0581
+        },
+        {
+          "hex": "#8bc8e8",
+          "coverage": 0.0174
+        },
+        {
+          "hex": "#a47818",
+          "coverage": 0.0116
+        },
+        {
+          "hex": "#2888d8",
+          "coverage": 0.0116
+        }
+      ],
+      "detail": {
+        "energy": 40.8043
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 19,
+          "capHeightPx": 7.3,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.7534,
+          "advTall": 0.7534,
+          "advX": null,
+          "gap": 0.3082,
+          "xRatio": null,
+          "stemW": 0.3043,
+          "contrast": 1.735,
+          "serif": null,
+          "densTall": 0.7058,
+          "densX": null,
+          "weight": 0.7058
+        },
+        "widthClass": "normal",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "hero-title",
+      "kind": "text",
+      "note": "The three-line main title just your average nerd ;) in a large custom display face.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0833,
+        "y": 0.3511,
+        "w": 0.3889,
+        "h": 0.2778
+      },
+      "px": {
+        "x": 120,
+        "y": 316,
+        "w": 560,
+        "h": 250
+      },
+      "aspect": 2.24,
+      "palette": [
+        {
+          "hex": "#081021",
+          "coverage": 0.5118
+        },
+        {
+          "hex": "#e8f6f8",
+          "coverage": 0.408
+        },
+        {
+          "hex": "#333d4b",
+          "coverage": 0.0369
+        },
+        {
+          "hex": "#5e6669",
+          "coverage": 0.0268
+        },
+        {
+          "hex": "#0d2944",
+          "coverage": 0.0165
+        }
+      ],
+      "detail": {
+        "energy": 56.5419
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 3,
+          "glyphs": 18,
+          "capHeightPx": 69.8,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.8442,
+          "advTall": 0.8442,
+          "advX": null,
+          "gap": 0.0715,
+          "xRatio": null,
+          "stemW": 0.2478,
+          "contrast": 1.0207,
+          "serif": 1.0023,
+          "densTall": 0.7541,
+          "densX": null,
+          "weight": 0.7541
+        },
+        "widthClass": "wide",
+        "weightClass": "black",
+        "chosen": {
+          "family": "Bytesized",
+          "weight": 400,
+          "fontSizePx": 100,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "519808a35eae"
+        }
+      }
+    },
+    {
+      "id": "hero-intro",
+      "kind": "text",
+      "note": "The two-line introduction naming coding, chess, cats, robots, and open-ended curiosity.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0833,
+        "y": 0.6733,
+        "w": 0.25,
+        "h": 0.0556
+      },
+      "px": {
+        "x": 120,
+        "y": 606,
+        "w": 360,
+        "h": 50
+      },
+      "aspect": 7.2,
+      "palette": [
+        {
+          "hex": "#0a0d1e",
+          "coverage": 0.8013
+        },
+        {
+          "hex": "#253142",
+          "coverage": 0.1271
+        },
+        {
+          "hex": "#e4e8f4",
+          "coverage": 0.0272
+        },
+        {
+          "hex": "#8dc9f5",
+          "coverage": 0.0256
+        },
+        {
+          "hex": "#e8ddcd",
+          "coverage": 0.0187
+        }
+      ],
+      "detail": {
+        "energy": 54.6275
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 45,
+          "capHeightPx": 12.3,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5936,
+          "advTall": 0.6341,
+          "advX": 0.5936,
+          "gap": 0.0945,
+          "xRatio": 0.6866,
+          "stemW": 0.1699,
+          "contrast": 1.4054,
+          "serif": 0.8158,
+          "densTall": 0.5076,
+          "densX": 0.5952,
+          "weight": 0.5076
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "hero-action",
+      "kind": "control",
+      "note": "The underlined Explore the folio link leading to About.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0833,
+        "y": 0.7556,
+        "w": 0.0903,
+        "h": 0.0378
+      },
+      "px": {
+        "x": 120,
+        "y": 680,
+        "w": 130,
+        "h": 34
+      },
+      "aspect": 3.8235,
+      "palette": [
+        {
+          "hex": "#101525",
+          "coverage": 0.9309
+        },
+        {
+          "hex": "#e5f8f8",
+          "coverage": 0.0244
+        },
+        {
+          "hex": "#7ab6f4",
+          "coverage": 0.0163
+        },
+        {
+          "hex": "#b3832f",
+          "coverage": 0.0142
+        },
+        {
+          "hex": "#a8e3f8",
+          "coverage": 0.0142
+        }
+      ],
+      "detail": {
+        "energy": 29.202
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      }
+    },
+    {
+      "id": "plate-caption",
+      "kind": "text",
+      "note": "The small FIELD PLATE caption aligned at the lower-right edge of the image.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.7431,
+        "y": 0.8489,
+        "w": 0.2083,
+        "h": 0.0222
+      },
+      "px": {
+        "x": 1070,
+        "y": 764,
+        "w": 300,
+        "h": 20
+      },
+      "aspect": 15,
+      "palette": [
+        {
+          "hex": "#080a19",
+          "coverage": 0.9008
+        },
+        {
+          "hex": "#3ea5e4",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#d1dfee",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#99d2f7",
+          "coverage": 0.0224
+        },
+        {
+          "hex": "#d7d3b5",
+          "coverage": 0.0192
+        }
+      ],
+      "detail": {
+        "energy": 63.5784
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 39,
+          "capHeightPx": 6.3,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.8355,
+          "advTall": 0.8355,
+          "advX": null,
+          "gap": 0.2387,
+          "xRatio": null,
+          "stemW": 0.3432,
+          "contrast": 1.4869,
+          "serif": null,
+          "densTall": 0.7493,
+          "densX": null,
+          "weight": 0.7493
+        },
+        "widthClass": "wide",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "about-kicker",
+      "kind": "text",
+      "note": "The FIELD ENTRY / ABOUT label opening the next section.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0764,
+        "y": 0.9222,
+        "w": 0.1319,
+        "h": 0.03
+      },
+      "px": {
+        "x": 110,
+        "y": 830,
+        "w": 190,
+        "h": 27
+      },
+      "aspect": 7.037,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.9583
+        },
+        {
+          "hex": "#6e9fd8",
+          "coverage": 0.0199
+        },
+        {
+          "hex": "#080888",
+          "coverage": 0.0072
+        },
+        {
+          "hex": "#3480d0",
+          "coverage": 0.0072
+        },
+        {
+          "hex": "#78a8c0",
+          "coverage": 0.0072
+        }
+      ],
+      "detail": {
+        "energy": 13.1976
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 16,
+          "capHeightPx": 6.3,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.7178,
+          "advTall": 0.7178,
+          "advX": null,
+          "gap": 0.2393,
+          "xRatio": 0.8259,
+          "stemW": 0.3121,
+          "contrast": 1.3875,
+          "serif": 0.5223,
+          "densTall": 0.7215,
+          "densX": null,
+          "weight": 0.7215
+        },
+        "widthClass": "normal",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "about-title",
+      "kind": "text",
+      "note": "The visible beginning of the next heading, A few things about me.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.0764,
+        "y": 0.9444,
+        "w": 0.4861,
+        "h": 0.0556
+      },
+      "px": {
+        "x": 110,
+        "y": 850,
+        "w": 700,
+        "h": 50
+      },
+      "aspect": 14,
+      "palette": [
+        {
+          "hex": "#080818",
+          "coverage": 0.5697
+        },
+        {
+          "hex": "#e7f6f8",
+          "coverage": 0.2263
+        },
+        {
+          "hex": "#97b8f7",
+          "coverage": 0.1641
+        },
+        {
+          "hex": "#3d465e",
+          "coverage": 0.0266
+        },
+        {
+          "hex": "#789aca",
+          "coverage": 0.0134
+        }
+      ],
+      "detail": {
+        "energy": 98.3869
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 19,
+          "capHeightPx": 42,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.7381,
+          "advTall": 0.7381,
+          "advX": null,
+          "gap": 0.0714,
+          "xRatio": null,
+          "stemW": 0.2274,
+          "contrast": 1.0611,
+          "serif": 1,
+          "densTall": 0.7363,
+          "densX": null,
+          "weight": 0.7363
+        },
+        "widthClass": "normal",
+        "weightClass": "black"
+      }
+    }
+  ],
+  "compSha256": "81c79e5f8ae3a31d0ca7490a23c0683549552b943e0626e2ab0bb5a18a53607d",
+  "regionsSource": {
+    "path": ".impeccable\\build\\regions.json",
+    "sha256": "9af4344c32f1dc642ae50340ff18fb91704cd872c6fe596da29bb1797b2b2232"
+  }
+}
