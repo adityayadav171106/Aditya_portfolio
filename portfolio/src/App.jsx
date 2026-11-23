@@ -46,7 +46,7 @@ function Hero() {
       <div className="hero__shade" />
       <div className="hero__copy">
         <p className="hero__descriptor">Aditya · Engineering student</p>
-        <h1 id="hero-title">just your<br />average<br /><span>nerd <i>;)</i></span></h1>
+        <h1 id="hero-title">just your<span className="hero__accent">average</span><span className="hero__accent">nerd <i>;)</i></span></h1>
         <p className="hero__intro">Coding, chess, cats, robots—and whatever I get curious about next.</p>
         <a className="hero__link" href="#about"><span>Explore the folio</span><span className="arrow" aria-hidden="true">↘</span></a>
       </div>
