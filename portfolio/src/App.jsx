@@ -1,17 +1,11 @@
 import { useState } from 'react';
 import projects from './data/projects';
+import heroPlate from '../assets/plates/hero-collage.png';
+import SceneBackground from './SceneBackground';
 import './App.css';
 import './Portfolio.css';
 
 const interests = ['Coding', 'Chess', 'Cats', 'Robots'];
-
-function StarMark({ className = '' }) {
-  return (
-    <svg className={className} viewBox="0 0 100 100" aria-hidden="true">
-      <path d="M50 2 61 38 98 50 61 62 50 98 39 62 2 50 39 38Z" />
-    </svg>
-  );
-}
 
 function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,6 +34,7 @@ function Navigation() {
           <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>
         ))}
       </nav>
+      <p className="folio-meta">Personal folio <span>/</span> 2026</p>
     </header>
   );
 }
@@ -47,18 +42,15 @@ function Navigation() {
 function Hero() {
   return (
     <section className="hero" id="home" aria-labelledby="hero-title">
-      <div className="hero__image" role="img" aria-label="A midnight-blue collage of a cat, moon, stars, and layered editorial graphics" />
+      <img className="hero__image" src={heroPlate} alt="Blue collage of a cat, moon, stars, and layered editorial graphics" fetchPriority="high" />
       <div className="hero__shade" />
-      <div className="hero__coordinates" aria-hidden="true"><span>INTERNET FIELD NOTES</span><span>ENGINEERING STUDENT · CURIOUS BY DEFAULT</span></div>
-      <StarMark className="hero__star hero__star--small" />
       <div className="hero__copy">
-        <p className="hero__descriptor">Personal site · 2026</p>
-        <h1 id="hero-title">Just your<br /><span>average nerd</span><span className="hero__wink">;)</span></h1>
-        <p className="hero__intro">I’m Aditya — an engineering student with too many tabs open, usually about code, chess, cats, or robots.</p>
-        <a className="hero__link" href="#about"><span>Come look around</span><span className="arrow" aria-hidden="true">↘</span></a>
+        <p className="hero__descriptor">Aditya · Engineering student</p>
+        <h1 id="hero-title">just your<br />average<br /><span>nerd <i>;)</i></span></h1>
+        <p className="hero__intro">Coding, chess, cats, robots—and whatever I get curious about next.</p>
+        <a className="hero__link" href="#about"><span>Explore the folio</span><span className="arrow" aria-hidden="true">↘</span></a>
       </div>
-      <div className="hero__caption"><span>FIELD NOTE</span><span>A small window into a curious mind</span></div>
-      <div className="hero__scroll" aria-hidden="true"><span />SCROLL A LITTLE</div>
+      <div className="hero__caption"><span>FIELD PLATE</span><span>A small window into a curious mind</span></div>
     </section>
   );
 }
@@ -66,6 +58,7 @@ function Hero() {
 function About() {
   return (
     <section className="about section-shell" id="about" aria-labelledby="about-title">
+      <p className="about__kicker">Field entry / about</p>
       <div className="section-heading">
         <h2 id="about-title">A few things<br /><em>about me.</em></h2>
         <span className="section-heading__note">A short introduction, no formalities.</span>
@@ -161,6 +154,7 @@ function Contact() {
 function App() {
   return (
     <div className="app-shell">
+      <SceneBackground />
       <Navigation />
       <main>
         <Hero />
