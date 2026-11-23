@@ -35,11 +35,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid #b9d4ff; outline-offs
 
 .app-shell { position: relative; isolation: isolate; min-height: 100vh; overflow: clip; background: transparent; }
 .scene-world { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; color: #9bbbe9; }
-.scene-world__map { width: 100%; height: 100%; opacity: .58; }
+.scene-world__map { width: 100%; height: 100%; opacity: .58; transform: var(--scene-map-transform, none); }
 .scene-world__grid { opacity: .24; }
 .scene-world__drift { stroke-width: 1; stroke-opacity: .22; transform-origin: center; animation: field-drift 48s ease-in-out infinite alternate; }
 .scene-world__stars { opacity: .68; transform-origin: center; animation: field-glimmer 9s ease-in-out infinite alternate; }
+.scene-world__print { opacity: .23; font: 600 7px/1 var(--body); letter-spacing: 2px; }
+.scene-world__print circle { opacity: .7; }
+.scene-world__subject { position: absolute; z-index: 1; display: block; height: auto; object-fit: contain; opacity: var(--scene-reveal, 0); transition: opacity 220ms ease-out; }
+.scene-world__moon { top: 15vh; right: 1%; width: clamp(140px, 15vw, 220px); transform: var(--moon-transform, none); }
+.scene-world__cat { left: 50%; bottom: -18vh; width: clamp(190px, 23vw, 320px); transform: var(--cat-transform, none); }
 .scene-world__haze { position: absolute; inset: 0; background: radial-gradient(ellipse at 74% 38%, rgba(34, 79, 134, .14), transparent 42%); }
+.scene-world.is-document-hidden .scene-world__drift,
+.scene-world.is-document-hidden .scene-world__stars { animation-play-state: paused; }
 main, .contact { position: relative; z-index: 1; }
 @keyframes field-drift { to { transform: translate3d(-1.2%, 1%, 0) rotate(.35deg); } }
 @keyframes field-glimmer { to { opacity: .36; transform: translateY(-2px); } }
@@ -59,7 +66,7 @@ main, .contact { position: relative; z-index: 1; }
   letter-spacing: -.05em;
 }
 .wordmark span { color: var(--blue-electric); }
-.site-nav { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.site-nav { position: absolute; top: 3.56vh; right: 17%; left: auto; width: max-content; height: auto; display: flex; align-items: center; gap: clamp(24px, 2.4vw, 35px); }
 .site-nav a, .menu-toggle, .folio-meta {
   color: #d8e5fb;
   font: 600 12px/1 var(--body);
@@ -68,11 +75,7 @@ main, .contact { position: relative; z-index: 1; }
   transition: color .2s ease;
 }
 .site-nav a:hover, .menu-toggle:hover { color: #91bbff; }
-.site-nav a { position: absolute; top: 3.56vh; }
-.site-nav a:nth-child(1) { left: 34.86%; }
-.site-nav a:nth-child(2) { left: 40.42%; }
-.site-nav a:nth-child(3) { left: 45.42%; }
-.site-nav a:nth-child(4) { left: 53.47%; }
+.site-nav a { position: static; }
 .folio-meta { position: absolute; top: 3.56vh; right: 5.07%; margin: 0; color: #c5d4eb; font-size: 8px; letter-spacing: .1em; }
 .folio-meta span { padding-inline: 5px; color: #7fa6df; }
 .menu-toggle { display: none; align-items: center; gap: 12px; padding: 12px 0; }
@@ -201,6 +204,8 @@ main, .contact { position: relative; z-index: 1; }
   .wordmark { left: var(--gutter); top: 16px; }
   .menu-toggle { position: absolute; top: 10px; right: var(--gutter); display: flex; }
   .folio-meta { display: none; }
+  .scene-world__moon { top: 2vh; right: -12%; width: clamp(96px, 26vw, 125px); }
+  .scene-world__cat { left: 80%; bottom: -5vh; width: 110px; filter: opacity(.55); }
   .site-nav { position: absolute; top: 72px; left: 0; right: 0; width: auto; height: auto; display: none; align-items: stretch; gap: 0; padding: 8px var(--gutter) 16px; background: rgba(7, 15, 31, .97); border-bottom: 1px solid var(--hairline); }
   .site-nav.is-open { display: flex; flex-direction: column; }
   .site-nav a { position: static; top: auto; left: auto; padding: 15px 0; border-bottom: 1px solid rgba(174, 202, 244, .12); font-size: 10px; }
@@ -251,5 +256,8 @@ main, .contact { position: relative; z-index: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   .scene-world__drift { animation: none; }
+  .scene-world__stars { animation: none; }
+  .scene-world__subject { transition-duration: 140ms; }
+  .scene-world__map, .scene-world__subject { transform: none !important; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
