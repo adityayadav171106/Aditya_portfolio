@@ -64,10 +64,10 @@ function About() {
         <span className="section-heading__note">A short introduction, no formalities.</span>
       </div>
       <div className="about__body">
-        <p className="about__statement">I’m interested in a lot of things, and I tend to follow the questions that come with them.</p>
+        <p className="about__statement">I’m interested in a lot of things, and I tend to <span className="about__accent">follow the questions that come with them.</span></p>
         <div className="about__details">
           <p>Engineering is what I study. Outside of it, I’m drawn to coding, chess, cats, robots, and whatever catches my curiosity next.</p>
-          <p>This site is a place to collect the things I make and the things I’m still figuring out.</p>
+          <p className="about__accent">This site is a place to collect the things I make and the things I’m still figuring out.</p>
         </div>
       </div>
       <div className="about__margin-note" aria-hidden="true">STILL CURIOUS <span /></div>

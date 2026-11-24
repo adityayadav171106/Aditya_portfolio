@@ -141,6 +141,7 @@ main, .contact { position: relative; z-index: 1; }
 .section-heading__note { justify-self: end; max-width: 28ch; padding-bottom: 9px; color: var(--blue-soft); font-size: 14px; line-height: 1.6; }
 .about__body { display: grid; grid-template-columns: 1.2fr .8fr; gap: 50px; margin-top: 60px; padding-top: 34px; border-top: 1px solid var(--hairline); }
 .about__statement { max-width: 22ch; margin: 0; color: #dbe8fb; font: 400 clamp(27px, 3.5vw, 43px)/1.28 var(--display); }
+.about__accent { color: #91bbff; }
 .about__details { max-width: 43ch; color: #bac9df; font-size: 15px; line-height: 1.85; }
 .about__details p { margin: 0 0 17px; }
 .about__margin-note { position: absolute; right: var(--gutter); bottom: 54px; color: #7b91b2; font: 600 9px/1 var(--body); letter-spacing: .16em; }
