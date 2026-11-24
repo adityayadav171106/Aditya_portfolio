@@ -3,8 +3,8 @@
    ============================================= */
 
 @font-face {
-  font-family: 'American Captain';
-  src: url('/AmericanCaptain.otf') format('opentype');
+  font-family: 'The Last Shuriken';
+  src: url('/The-Last-Shuriken.otf') format('opentype');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -27,10 +27,10 @@
   --grain-opacity: 0.035;
 
   /* Typography */
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-captain: 'American Captain', 'Arial Narrow', sans-serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
-  --font-accent: 'Cormorant Garamond', 'Georgia', serif;
+  --font-display: 'The Last Shuriken', sans-serif;
+  --font-captain: 'The Last Shuriken', sans-serif;
+  --font-body: 'The Last Shuriken', sans-serif;
+  --font-accent: 'The Last Shuriken', sans-serif;
 
   /* Spacing */
   --section-padding: clamp(80px, 12vh, 160px);
