@@ -26,6 +26,13 @@ const projects = [
     technologies: ['React', 'Vite', 'Node.js', 'Express', 'CSS'],
     repository: 'https://github.com/adityayadav171106/crce_placement_portal-',
   },
+  {
+    title: 'Personal Portfolio',
+    description:
+      'A single-page portfolio built with React and Vite. It pairs a moonlit blue collage with sections about me, my projects, and the interests I keep coming back to, with a responsive layout and a subtle animated background.',
+    technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'GSAP', 'Framer Motion'],
+    repository: 'https://github.com/adityayadav171106/Aditya_portfolio',
+  },
 ];
 
 export default projects;
