@@ -80,7 +80,7 @@ function Work() {
     <section className="work section-shell" id="work" aria-labelledby="work-title">
       <div className="section-heading section-heading--work">
         <h2 id="work-title">Things I’ve<br /><em>made.</em></h2>
-        <p className="section-heading__note">An archive in progress. Real projects will go here when they’re ready to share.</p>
+        <p className="section-heading__note">A few things I’ve built along the way.</p>
       </div>
       {projects.length ? (
         <div className="project-list">
